@@ -6,13 +6,14 @@
 }
 :root {
   --heading: rgb(0 10 45);
-  --para: #777;
+  --para: rgb(119, 118, 118);
   --para-tint: #e4e4e4;
   --white: #fff;
   --black: #212529;
   --helper: rgba(135,8,204,1);
   --helper-tint: #f3f4ff;
-  --bg: rgp(249 249 255);
+  --bg: rgb(249 249 255);
+  /* --bg:#F8F7F7; */
   --gradient: linear-gradient(135deg, rgba(67,203,255,1) 0%, rgba(135,8,204,1) 100%);
   /* --gradientSupport: -webkit-linear-gradient(0deg, rgba(132,144,255,1) 0%, rgba(98,189,252,1) 100%); */
   --gradientSupport: -webkit-linear-gradient(135deg, rgba(67,203,255,1) 0%, rgba(135,8,204,1) 100%);
@@ -42,6 +43,7 @@ p {
   /* color: black; */
   line-height: 1.6;
   font-size: 1.7rem;
+  font-weight: 600;
 }
 a {
   text-decoration: none;
@@ -66,6 +68,13 @@ li {
 .btn:hover,.btn:active{
   box-shadow: var(--shadowSupport);
 }
+.common-heading{
+  font-size: 4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 6rem;
+}
+
 /* ***************************
         Header section
 ****************************** */
@@ -150,9 +159,97 @@ li {
     align-items: center;
 }
 /* **********************************
-            Bio section 
+            Bio-data section 
 *************************************/
 .bio-image img{
   width: 80%;
   box-shadow: -1rem -1rem 0 0 var(--helper);
+  display: inline-block;
+}
+.bio-data-stats{
+    display: flex;
+    flex-direction: column;
+    padding: 6.4rem 0;
+    gap: 3rem;
+}
+.bio-progress-bar{
+    height: 1rem;
+    width: 90%;
+    background: var(--para-tint);
+    border-radius:10rem;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+.bio-progress-bar::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: inherit;
+  background: var(--gradientSupport);
+  border-radius: 10rem;
+}
+.bio-stats h3{
+    margin-bottom: 1rem;
+}
+.bar-progess-2::before{
+  width: 50%;
+}
+.bar-progess-3::before{
+  width: 70%;
+}
+.bar-progess-4::before,
+.bar-progess-5::before{
+    width: 40%;
+}
+.bio-progress-bar span{
+  position: absolute;
+  top: 1.8rem;
+  width: 3rem;
+  height: 2rem;
+  background: var(--gradientSupport);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: 0;
+  font-weight: 600;
+  border-radius: .5rem;
+}
+.bio-progress-bar span{
+  left: 78%;
+}
+.bar-progess-2 span{
+  left: 48%;
+}
+.bar-progess-3 span{
+  left: 68%;
+}
+.bar-progess-4 span,
+.bar-progess-5 span{
+    left: 38%;
+
+}
+.bio-progress-bar::after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0.8rem solid var(--helper);
+  border-color: transparent;
+  border-bottom-color:var(--helper) ;
+  top: .2rem;
+  left: 79%;
+}
+.bar-progess-2::after{
+  left: 49%;
+}
+.bar-progess-3::after{
+  left: 69%;
+}
+.bar-progess-4::after,
+.bar-progess-5::after{
+    left: 39%;
 }
