@@ -6,14 +6,14 @@
 }
 :root {
   --heading: rgb(0 10 45);
-  --para: rgb(119, 118, 118);
+  --para: rgb(133, 132, 132);
   --para-tint: #e4e4e4;
   --white: #fff;
   --black: #212529;
   --helper: rgba(135,8,204,1);
   --helper-tint: #f3f4ff;
   --bg: rgb(249 249 255);
-  /* --bg:#F8F7F7; */
+  /* --bg:#f2f2fa; */
   --gradient: linear-gradient(135deg, rgba(67,203,255,1) 0%, rgba(135,8,204,1) 100%);
   /* --gradientSupport: -webkit-linear-gradient(0deg, rgba(132,144,255,1) 0%, rgba(98,189,252,1) 100%); */
   --gradientSupport: -webkit-linear-gradient(135deg, rgba(67,203,255,1) 0%, rgba(135,8,204,1) 100%);
@@ -90,7 +90,7 @@ li {
   /* position: fixed; */
 }
 .header .logo {
-  height: 2.5rem;
+  height: 6rem;
 }
 .navbar-list {
   display: flex;
@@ -177,7 +177,7 @@ li {
     width: 90%;
     background: var(--para-tint);
     border-radius:10rem;
-    box-shadow: var(--shadow);
+    /* box-shadow: var(--shadow); */
     position: relative;
 }
 .bio-progress-bar::before{
