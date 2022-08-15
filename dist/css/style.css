@@ -10,7 +10,7 @@
   --para-tint: #e4e4e4;
   --white: #fff;
   --black: #212529;
-  --helper: #8490ff;
+  --helper: rgba(135,8,204,1);
   --helper-tint: #f3f4ff;
   --bg: rgp(249 249 255);
   --gradient: linear-gradient(135deg, rgba(67,203,255,1) 0%, rgba(135,8,204,1) 100%);
@@ -148,4 +148,11 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/* **********************************
+            Bio section 
+*************************************/
+.bio-image img{
+  width: 80%;
+  box-shadow: -1rem -1rem 0 0 var(--helper);
 }
