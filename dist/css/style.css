@@ -508,6 +508,9 @@ Resume Section
     .section-resume .grid-two-column{
       width: 50%;
     }
+    .navbar .navbar-list{
+      display: none;
+    }
     
   }
   @media(max-width:800px){
