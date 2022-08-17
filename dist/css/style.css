@@ -19,6 +19,7 @@
   --gradientSupport: -webkit-linear-gradient(135deg, rgba(67,203,255,1) 0%, rgba(135,8,204,1) 100%);
   --shadow: 0px 0px 20px 0px rgb(132 144 255 / 30%);
   --shadowSupport: 0 2rem 2rem rgb(132 144 255 / 30%);
+  --bgcolor: #242582;
 }
 html {
   font-size: 62.5%;
@@ -87,6 +88,7 @@ li {
         Header section
 ****************************** */
 
+
 .header{
   padding: 0 4.8rem;
   height: 8rem;
@@ -118,6 +120,19 @@ li {
     color: var(--helper);
     border-bottom: #212529;
 }
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: var(--white);
+  /* box-shadow: var(--shadow); */
+}
+/* .header{
+  margin-top: 10rem;
+} */
+
 /* **********************************
           hero section start
 ************************************* */
@@ -457,6 +472,7 @@ Resume Section
     }
     
   }
+ 
   @media (max-width:1200px){
     html{
       font-size: 56.25%;
@@ -492,6 +508,7 @@ Resume Section
     .section-resume .grid-two-column{
       width: 50%;
     }
+    
   }
   @media(max-width:800px){
     .container{
